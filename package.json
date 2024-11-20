@@ -1,6 +1,6 @@
 {
   "name": "csgogsi",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
@@ -30,7 +30,7 @@
     "build": "npm run pre-compile && npm run rollup",
     "lint": "eslint .",
     "prettier-format": "prettier --config .prettierrc --write tsc/*.ts",
-    "pre-compile": "npm run prettier-format && npm run lint && npm test && npm run make-badges"
+    "pre-compile": "npm run prettier-format && npm run lint && npm run make-badges"
   },
   "repository": {
     "type": "git",

@@ -195,7 +195,7 @@ class CSGOGSI {
 			examplePlayerT &&
 			examplePlayerT.observer_slot !== undefined
 		) {
-			if ((examplePlayerCT.observer_slot || 10) > (examplePlayerT.observer_slot || 10)) {
+			if ((examplePlayerCT.observer_slot || 10) < (examplePlayerT.observer_slot || 10)) {
 				isCTLeft = false;
 			}
 		}
@@ -307,7 +307,7 @@ class CSGOGSI {
 						phase: raw.round.phase,
 						bomb: raw.round.bomb,
 						win_team: raw.round.win_team
-				  }
+					}
 				: null,
 			player: observed,
 			players: players,
@@ -325,9 +325,9 @@ class CSGOGSI {
 								? CSGOGSI.findSite(
 										raw.map.name,
 										bomb.position.split(', ').map(n => parseFloat(n))
-								  )
+									)
 								: null
-				  }
+					}
 				: null,
 			grenades: parseGrenades(raw.grenades),
 			phase_countdowns: {

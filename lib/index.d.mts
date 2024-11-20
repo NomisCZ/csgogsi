@@ -521,7 +521,7 @@ declare class CSGOGSI {
     eventNames: () => EventNames[];
     getMaxListeners: () => number;
     listenerCount: (eventName: EventNames) => number;
-    listeners: (eventName: EventNames) => (((data: CSGORaw) => void) | ((data: CSGO) => void) | ((team: Score) => void) | ((score: Score) => void) | ((kill: KillEvent) => void) | ((kill: HurtEvent) => void) | ((team: any) => void) | (() => void) | ((player: Player) => void) | (() => void) | (() => void) | (() => void) | (() => void) | ((player: Player) => void) | ((player: Player) => void) | ((player: Player) => void) | ((player: Player) => void) | (() => void) | ((player: Player) => void) | (<K extends keyof Events>(eventName: K, listener: Events[K]) => void) | (<K_1 extends keyof Events>(eventName: K_1, listener: Events[K_1]) => void))[];
+    listeners: (eventName: EventNames) => (((data: CSGORaw) => void) | ((data: CSGO) => void) | ((team: Score) => void) | ((score: Score) => void) | ((kill: KillEvent) => void) | ((kill: HurtEvent) => void) | ((team: any) => void) | (() => void) | ((player: Player) => void) | (() => void) | (() => void) | (() => void) | (() => void) | ((player: Player) => void) | ((player: Player) => void) | ((player: Player) => void) | ((player: Player) => void) | (() => void) | ((player: Player) => void) | (<K extends keyof Events>(eventName: K, listener: Events[K]) => void) | (<K extends keyof Events>(eventName: K, listener: Events[K]) => void))[];
     removeListener: <K extends EventNames>(eventName: K, listener: Callback<K>) => this;
     off: <K extends EventNames>(eventName: K, listener: Callback<K>) => this;
     addListener: <K extends EventNames>(eventName: K, listener: Callback<K>) => this;
